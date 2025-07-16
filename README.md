@@ -9,6 +9,17 @@ SDK Generator for all Unreal Engine games. Supported versions are all of UE4 and
 - Inject the dll into your target game
 - The SDK is generated into the path specified by `Settings::SDKGenerationPath`, by default this is `C:\\Dumper-7`
 - **See [UsingTheSDK](UsingTheSDK.md) for a guide to get started, or to migrate from an old SDK.**
+
+## Lua Scripts
+
+The `scripts/` directory contains Lua implementations of the core FNamePool GNames finding functionality:
+
+- `fnamepool_gnames_finder.lua` - Basic implementation with core functionality
+- `advanced_gnames_finder.lua` - Enhanced version with validation and interactive mode
+- `simple_example.lua` - Simple example demonstrating basic usage
+- `README.md` - Detailed documentation for the Lua scripts
+
+These scripts replicate the functionality from `NameArray.cpp` and can be used with any Lua environment that supports the documented API functions.
 ## Support Me
 
 KoFi: https://ko-fi.com/fischsalat \
